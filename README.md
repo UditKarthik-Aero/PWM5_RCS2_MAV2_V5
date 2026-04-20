@@ -11,8 +11,8 @@ The core of the **MAV Architecture** is a pulsed-thrust control logic. By solvin
 $$\text{T}_{pulse\_cycle} = m \left( g - \frac{D}{2m} + \frac{2u}{t} - \frac{2h}{t^2} \right)$$
 
 **Where:**
-* $m$ = Vehicle Mass
-* $g$ = Gravitational Acceleration
-* $D$ = Aerodynamic Drag
-* $u$ = Vertical Velocity
-* $h$ = Current Altitude
+* $m$ = Vehicle mass
+* $g$ = Gravitational acceleration
+* $D$ = Aerodynamic drag
+* $u$ = Vertical velocity
+* $h$ = Current altitude
