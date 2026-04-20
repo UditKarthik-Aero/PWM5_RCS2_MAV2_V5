@@ -124,13 +124,3 @@ print(f"{'Flight Time':<20} | {spacex_data['time']:>9.2f} s   | {your_data['time
 print(f"{'Final Tilt':<20} | {spacex_data['tilt']:>9.2f}°   | {your_data['tilt']:>9.2f}°")
 print("-" * 50)
 
-import csv
-
-# Save the results to a file named 'telemetry.csv'
-with open('telemetry.csv', 'w', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerow(['altitude', 'velocity', 'fuel_mav', 'fuel_spacex']) # Headers
-    # Zip your logs together and save them
-    writer.writerows(zip(h_log, v_log, fuel_log_mav, fuel_log_spacex))
-
-print("Telemetry saved to telemetry.csv")
