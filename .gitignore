@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files (Python "trash")
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (where libraries are stored)
+venv/
+env/
+.env
+
+# Thonny or IDE specific files
+.history/
+.project
+.settings/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Data/Plots (Optional: only if you don't want to upload your saved .png graphs)
+# *.png
+# *.pdf
