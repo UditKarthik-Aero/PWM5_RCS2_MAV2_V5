@@ -4,7 +4,7 @@ a high-fidelity physics simulation comparing the fuel efficiency of a Falcon 9 "
 1. Install Python and Matplotlib.
 2. Clone this repository.
 3. Run `MAV_Dashboard.py` to see the telemetry or `main.py` for the full simulation.
-![MAV Landing Dashboard](Graph_V5.png)
+![MAV Landing Dashboard](<img width="1362" height="705" alt="PWM_MAV_Stress_Velocity_Thrust_graph" src="https://github.com/user-attachments/assets/d31a5b19-351b-47a3-af9f-cdc8042ec787" />)
 ### The Physics of Pulsed Descent
 The core of the **MAV Architecture** is a pulsed-thrust control logic. By solving for the required thrust ($T$) over a specific duty cycle, we can optimize for atmospheric drag while maintaining a soft-landing trajectory:
 
