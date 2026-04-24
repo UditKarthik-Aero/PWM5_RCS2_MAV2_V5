@@ -7,13 +7,16 @@ a high-fidelity physics simulation comparing the fuel efficiency of a Falcon 9 "
 ## Performance Analysis: SpaceX vs. Pulsed MAV
 
 The following graph illustrates the trade-off between fuel efficiency and structural stress. Note the aggressive aero-tilt phase in the Pulsed MAV model which significantly reduces propellant consumption at the cost of increased bending stress.
-## Mission Comparison: SpaceX vs. Pulsed MAV
+## Simulation Analysis: SpaceX Baseline vs. Pulsed MAV
 
-The simulation results below highlight the efficiency gains of the Pulsed MAV through aerodynamic deceleration. By maintaining a 15° angle of attack, the MAV leverages atmospheric drag to bleed velocity, resulting in significantly lower fuel consumption despite higher structural bending loads.
+The following graph compares the flight dynamics of the standard SpaceX "Hoverslam" profile against my custom Pulsed MAV (Mass-Altitude-Velocity) controller.
 
 ![Flight Physics Comparison](mission_comparison_graph.png)
 
-*Figure 1: Velocity profiles, structural bending stress (Pa), and engine duty cycles over mission duration.*
+### Key Engineering Insights:
+* **Velocity:** The Pulsed MAV uses a 15° Aero-Tilt to maximize atmospheric drag, resulting in a more gradual deceleration curve.
+* **Stress:** Note the significant peak in Bending Stress (Pa) for the Pulsed MAV; this represents the structural trade-off required to achieve higher fuel efficiency.
+* **Thrust:** The bottom panel illustrates the Digital Pulsing (PWM) logic used to bypass the 40% throttle floor limitations of current Merlin 1D class engines.
 ### The Physics of Pulsed Descent
 The core of the **MAV Architecture** is a pulsed-thrust control logic. By solving for the required thrust ($T$) over a specific duty cycle, we can optimize for atmospheric drag while maintaining a soft-landing trajectory:
 
