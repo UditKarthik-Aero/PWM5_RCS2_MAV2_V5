@@ -1,5 +1,8 @@
 # PWM5_RCS2_MAV2_V5
-a high-fidelity physics simulation comparing the fuel efficiency of a Falcon 9 "Hoverslam" profile against an optimized Pulsed-Thrust (PWM) architecture. By utilizing a 15° Aero-Tilt Strategy and a leveraged RCS PD Controller, this model demonstrates a ~47% reduction in fuel consumption during the terminal descent phase.
+a simplified physics simulation comparing the fuel efficiency of a Falcon 9 "Hoverslam" profile against an optimized Pulsed-Thrust (PWM) architecture. By utilizing a 15° Aero-Tilt Strategy and a leveraged RCS PD Controller, this model demonstrates a ~47% reduction in fuel consumption during the terminal descent phase.
+
+While this model demonstrates the theoretical fuel-efficiency of a Pulsed MAV controller, it operates under an idealized 1-DOF environment. Specifically, it ignores Engine Transient Response (latency) and Supersonic Retro-propulsion interference. A more high-fidelity model would require a 6-DOF simulation to account for the horizontal translation caused by the 15° aero-tilt and would require a powerful computer to run at perfect latency. 
+
 ### How to Run
 1. Install Python and Matplotlib.
 2. Clone this repository.
